@@ -1,3 +1,5 @@
+###### Rock Paper Scissors Codes!
+
 kullanıcı1= input("ismin nedir?")
 kullanıcı2= input("peki ya senin ismin?")
 
@@ -26,3 +28,106 @@ def karşılaştırma(k1, k2):
         return("herhangi birşey seçmedin,tekrar dene.")
         
 print(karşılaştırma(kullanıcı1_cevap, kullanıcı2_cevap))
+
+
+
+
+
+-------------------------------------------------------------
+-------------------------------------------------------------
+####### Mors Translatör :)
+
+
+Morskodu = { 'A':'.-', 'B':'-...', 
+                    'C':'-.-.', 'D':'-..', 'E':'.', 
+                    'F':'..-.', 'G':'--.', 'H':'....', 
+                    'I':'..', 'J':'.---', 'K':'-.-', 
+                    'L':'.-..', 'M':'--', 'N':'-.', 
+                    'O':'---', 'P':'.--.', 'Q':'--.-', 
+                    'R':'.-.', 'S':'...', 'T':'-', 
+                    'U':'..-', 'V':'...-', 'W':'.--', 
+                    'X':'-..-', 'Y':'-.--', 'Z':'--..', 
+                    '1':'.----', '2':'..---', '3':'...--', 
+                    '4':'....-', '5':'.....', '6':'-....', 
+                    '7':'--...', '8':'---..', '9':'----.', 
+                    '0':'-----', ', ':'--..--', '.':'.-.-.-', 
+                    '?':'..--..', '/':'-..-.', '-':'-....-', 
+                    '(':'-.--.', ')':'-.--.-'} 
+  
+  def şifreleme(mesaj): 
+    
+    şifre = '' 
+    
+    for sözcük in mesaj: 
+       
+       if sözcük != ' ': 
+  
+            
+            
+            şifre += Morskodu[sözcük] + ' '
+       
+       else: 
+             şifre += ' '
+  
+    return şifre 
+   
+
+
+
+def gerişifre(mesaj): 
+  
+
+    mesaj += ' '
+  
+    geriyeşifre = '' 
+   
+   geriyet = '' 
+   
+   for sözcük in mesaj: 
+  
+        
+        if (sözcük != ' '): 
+   
+            i = 0 
+            
+          geriyet += sözcük 
+        
+        else:
+        
+            i += 1
+            
+            if i == 2 : 
+               
+               geriyeşifre += ' '
+           
+           else: 
+               
+               geriyeşifre += list(Morskodu.keys())[list(Morskodu 
+               
+               .values()).index(geriyet)] 
+               
+               geriyet = '' 
+  
+  return geriyeşifre 
+
+
+
+
+
+def main(): 
+   
+   mesaj = "selamlar"
+    
+    sonuç = şifreleme(mesaj.upper()) 
+    
+    print (sonuç) 
+  
+    mesaj = "... . .-.. .- -- .-.. .- .-. "
+   
+   sonuç = gerişifre(mesaj) 
+    
+    print(sonuç)
+
+if __name__ == '__main__':   
+    
+    main() 
