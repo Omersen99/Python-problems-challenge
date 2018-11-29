@@ -158,7 +158,7 @@ if L1 == L2:
     POINTS = POINTS + 5
  
 if S1 == "a" or "e" or "i" or "o" or "u":
-    POINTS = POINTS + 2
+    POINTS = POINTS + 2.5
 else:
     POINTS = POINTS + 1
 if S2 == "a" or "e" or "i" or "o" or "u":
@@ -166,50 +166,50 @@ if S2 == "a" or "e" or "i" or "o" or "u":
 else:
     POINTS = POINTS + 0.5
 if L1B  and L2B == "Koç" or "Oğlak" or "Yay":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B and L2B == "Boğa" or "Balık" or "Akrep" or "Terazi" or "Başak" or "Yengeç" or "İkizler":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Koç" and L2B or L1B == "Boğa" or "İkizler" or "Aslan" or "Terazi" or "Akrep" or "Yay":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Koç" and L2B or L1B == "Yengeç" or "Başak" or "Oğlak" or "Balık":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B  or L2B== "Boğa" and L2B  or L1B == "İkizler" or "Yay" or "Balık":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Boğa" and L2B or L1B == "Yengeç" or "Aslan" or "Başak" or "Terazi" or "Akrep" or "Oğlak":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "İkizler" and L2B or L1B == "Yengeç" or "Aslan" or "Terazi" or "Akrep" or "Kova":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
     
 if L1B or L2B == "İkizler" and L2B or L1B == "Başak" or "Yay" or "Oğlak" or "Balık":    
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Yengeç"  and L2B or L1B == "Aslan" or "Akrep" or "Oğlak" or "Balık":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B  or L2B == "Yengeç"  and L2B or L1B == "Başak" or "Terazi" or "Yay" or "Kova":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Aslan"   and L2B or L1B== "Oğlak" or "Başak":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Aslan"   and L2B or L1B == "Terazi" or "Akrep" or "Yay" or "Kova" or "Balık":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Başak"   and L2B or L1B == "Terazi" or "Yay" or "Oğlak" or "Terazi" or "Akrep" or "Yay":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Başak"   and L2B or L1B == "Kova" or "Akrep" or "Balık":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Terazi"  and L2B or L1B == "Akrep" or "Yay" or "Kova":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Terazi"  and L2B or L1B == "Oğlak" or "Balık":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Akrep"   and L2B or L1B == "Yay" or "Kova" or "Oğlak":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Akrep"   and L2B or L1B == "Balık":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Yay"    and L2B or L1B == "Oğlak" or "Balık":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if L1B or L2B == "Yay"    and L2B or L1B == "Kova":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Oğlak"  and L2B or L1B == "Balık" or "Kova":
-    POINTS = POINTS +5
+    POINTS = POINTS +3
 if L1B or L2B == "Kova"   and L2B or L1B == "Balık":
-    POINTS = POINTS -5
+    POINTS = POINTS -3
 if POINTS > 5 :
     print("Aşk Puanın",POINTS,"çıktı süper gerçekten. söylemediysen şansını dene ;)")
 if POINTS < 5 :
